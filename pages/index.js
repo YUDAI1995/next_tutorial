@@ -48,8 +48,8 @@ export default function Home({allPostsData}) {
 
 
 //データ有りの静的生成
-//本質的には、getStaticProps を使うことで Next.js にこう伝えることができるということです。
-//「このページにはいくつか外部に依存しているデータがあるよ。だからビルド時にこのページをプリレンダリングするときは、まずその依存関係をしっかり解決してよ！」
+//本質的には、getStaticProps を使うことで Next.js にこう伝えることができる,
+//"このページにはいくつか外部に依存しているデータがある。そのためビルド時にこのページをプリレンダリングするときは、まずその依存関係を解決する処理を行う"
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   return {
@@ -60,7 +60,7 @@ export async function getStaticProps() {
   }
 }
 
-// サーバサイドレンダリング(今回の実装はなし)
+// サーバサイドレンダリング例(今回の実装なし)
 // export async function getServerSideProps(context) {
 //   return {
 //     props: {
