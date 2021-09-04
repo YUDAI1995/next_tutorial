@@ -113,6 +113,10 @@
   margin-left: 0.5rem;
 }
 
+.content_section + .content_section {
+  margin-top: 50px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
